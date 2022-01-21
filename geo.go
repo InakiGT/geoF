@@ -1,4 +1,4 @@
-package geoFi
+package geoF
 
 type figuraGeo interface {
 	Area() float64
