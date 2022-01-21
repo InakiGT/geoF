@@ -5,30 +5,30 @@ type figuraGeo interface {
 }
 
 type Triangulo struct {
-	base   float64
-	altura float64
+	Base   float64
+	Altura float64
 }
 
 type Cuadrado struct {
-	lado float64
+	Lado float64
 }
 
 type Pentagono struct {
-	lado    float64
-	apotema float64
+	Lado    float64
+	Apotema float64
 }
 
 func (t *Triangulo) Area() float64 {
-	return t.altura * t.base
+	return t.Altura * t.Base
 }
 
 func (c *Cuadrado) Area() float64 {
-	return c.lado * c.lado
+	return c.Lado * c.Lado
 }
 
 func (p *Pentagono) Area() float64 {
-	per := p.lado * 5
-	return per * p.apotema / 2
+	per := p.Lado * 5
+	return per * p.Apotema / 2
 }
 
 func Figure(lados string) string {
