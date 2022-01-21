@@ -1,7 +1,7 @@
-package geoF
+package geoFi
 
 type figuraGeo interface {
-	area() float64
+	Area() float64
 }
 
 type Triangulo struct {
@@ -18,15 +18,15 @@ type Pentagono struct {
 	apotema float64
 }
 
-func (t *Triangulo) area() float64 {
+func (t *Triangulo) Area() float64 {
 	return t.altura * t.base
 }
 
-func (c *Cuadrado) area() float64 {
+func (c *Cuadrado) Area() float64 {
 	return c.lado * c.lado
 }
 
-func (p *Pentagono) area() float64 {
+func (p *Pentagono) Area() float64 {
 	per := p.lado * 5
 	return per * p.apotema / 2
 }
